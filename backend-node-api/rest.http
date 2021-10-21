@@ -1,0 +1,35 @@
+# List of the apis and  their request 
+
+
+### fetch all the tickets  
+
+GET http://localhost:8000/api/v1/
+### add new tickets  
+
+POST  http://localhost:8000/api/v1/
+Content-Type: application/json 
+
+{
+    "task": "sadasd : ",
+    "hr": 1321
+}
+
+
+### update tickets  
+
+PATCH  http://localhost:8000/api/v1/
+Content-Type: application/json 
+
+{
+"id" : "6161a10b9ebeb6244270f2c4",
+"todo" : false
+}
+
+### delete  tickets  
+
+DELETE  http://localhost:8000/api/v1/
+Content-Type: application/json 
+
+{
+    "ids" : ["6159094d5df7b9e9056bb0ef", "6159094e5df7b9e9056bb0f1"]
+}
